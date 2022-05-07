@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+int num;
+printf("Digite um numero inteiro positivo: ");
+scanf("%d",&num);
+int divisor = num;
+int cont = 0;
+printf("Lista de divisores: ");
+while (divisor != 0){
+	if (num % divisor == 0){
+		printf("%d ",divisor);
+		cont = cont + 1;
+		}
+	divisor--;
+}
+printf("\n");
+printf("Quantidade de divisores: %d",cont);
+return 0;
+}
